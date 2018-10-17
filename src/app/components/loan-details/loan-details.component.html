@@ -1,0 +1,46 @@
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-md-8 col-lg-6 mx-auto">
+          <div class="card my-5">
+            <div class="card-header"><h5>Loan ID #{{loan?.loanID}}</h5></div>
+            <div class="card-body">
+                <div class='row'>
+                    <div class='col-md-6'>Name:</div>
+                    <div class='col-md-6'>{{loan?.customerName | titlecase}}</div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-md-6'>Identifical Number:</div>
+                    <div class='col-md-6'>{{loan?.identificalNumber}}</div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-md-6'>Loan Amount:</div>
+                    <div class='col-md-6'>{{loan?.loanAmount}}</div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-md-6'>Credit Rating:</div>
+                    <div class='col-md-6'>{{loan?.creditRating}}</div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-md-6'>Term (Months):</div>
+                    <div class='col-md-6'>{{loan?.termsInMonths}}</div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-md-6'>Annual Income:</div>
+                    <div class='col-md-6'>{{loan?.annualIncome}}</div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-md-6'>Interest Rates:</div>
+                    <div class='col-md-6'>{{loan?.interestRates | percent:'.2' }}</div>
+                  </div>
+                  <div class='row'>
+                    <div class='col-md-6'>Loan Officer ID:</div>
+                    <div class='col-md-6'>{{loan?.loanOfficer}}</div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  

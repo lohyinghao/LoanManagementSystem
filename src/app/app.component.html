@@ -1,0 +1,24 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['/']">
+      <img src="./assets/wallet.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Lenders Union
+    </a>
+
+    <div class="navbar-expand mr-auto">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" [routerLink]="['/loan/new']">New</a>
+        <a class="nav-item nav-link" [routerLink]="['/loan/all']">Archive</a>
+      </div>
+    </div>
+    <div class="navbar-expand navbar-right">
+        
+      <div class="navbar-nav">
+        <a class="nav-item nav-link"[routerLink]="['/home']">{{getUsernameforNavBar}}</a>
+        <a class="nav-item nav-link"[routerLink]="['/home']"><i class="fa fa-user"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,40 @@
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body bg-light">
+            <div class="text-center m-3">
+              <img src="./assets/wallet.png" width="100" height="100" class="d-inline-block align-top" alt="">
+              <h3>Lenders Union</h3>
+              <br>
+              <h4>{{currentUser}}</h4>
+            </div>
+
+            <hr>
+            <div class="d-flex justify-content-center m-2">
+              <a class="btn btn-secondary btn-block align-middle" 
+              role="button" [routerLink]="['/loan/new']">
+                <span class="fa fa-file fa-lg my-icon"></span>
+                <span class="my-text">&nbsp;&nbsp;New Loan Application</span>
+              </a>
+            </div>
+            <div class="d-flex justify-content-center m-2">
+              <a class="btn btn-secondary btn-block align-middle" 
+              role="button" [routerLink]="['/loan/all']">
+                <span class="fa fa-archive fa-lg my-icon"></span>
+                <span class="my-text">&nbsp;&nbsp;View Issued Loan</span>
+              </a>
+            </div>
+            <div class="d-flex justify-content-center m-2">
+              <a class="btn btn-secondary btn-block align-middle" role="button" (click)='logout()'>
+                <span class="fa fa-sign-out fa-lg my-icon text-white"></span>
+                <span class="my-text text-white">&nbsp;&nbsp;Sign out</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
