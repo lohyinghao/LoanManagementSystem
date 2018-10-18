@@ -2,7 +2,7 @@
 
 ![Lenders Union](loanManagementSystem.png)
 
-A web application built using Angular for a frictional loan company. Using this app, staff are able to submit customer loans application for interest rate calculations and approval.
+A web application built using Angular for a fictional loan company Utilizing this app, staff will be able to submit customer loans application for interest rate calculations and approval. 
 
 [Demo](https://loanmanagementsystem.herokuapp.com)
 
